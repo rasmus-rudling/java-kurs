@@ -1,0 +1,11 @@
+services:
+  postgresql:
+    image: postgres:15.2
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: admin
+      POSTGRES_DB: postgres
+    ports:
+      - '5432:5432'
+
